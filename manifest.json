@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "ClickupFontModExtension",
+  "version": "0.0.1",
+  "description": "Clickupのフォントを見やすくするだけのExtensionです（非公式）",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.clickup.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "https://*.clickup.com/*"
+  ],
+  "icons" : {
+    "128": "icon.png"
+  }
+}
